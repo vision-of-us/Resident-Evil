@@ -24,7 +24,7 @@ public class UserController {
     private RoleService roleService;
 
     @GetMapping("/register")
-    public String getRegisterPage(@ModelAttribute RegisterUserModel registerUserModel,Model model){
+    public String getRegisterPage(@ModelAttribute RegisterUserModel registerUserModel, Model model){
         model.addAttribute("view","register-user");
         return "base-layout";
     }
